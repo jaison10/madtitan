@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+html{
+}
+body{
+    margin: 0px 0px;
+    overflow-x: hidden;
+    height: 100%;
+    /* background: black; */
+}
+.main{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+.main-container{
+    width: 80%;
+    height: 100vh;
+    /* min-height: 100vh; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+.image-text-section{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.image-text-container{
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    width: 50%;
+    height: 600px;
+    border-radius: 5px;
+}
+
+#image1{
+    background: url('../img/image1.jpg') no-repeat center / cover;
+}
+
+#image2{
+    background: url('../img/image2.jpg') no-repeat center / cover;
+}
+
+.right{
+    width: 50%;
+    min-height: 400px;
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.right h1{
+    font-weight: 800;
+}
+
+.right p{
+    padding: 15px 0;
+    line-height: 25px;  /*places vertically center*/
+}
+
+.right a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+    letter-spacing: 2px;
+    padding: 10px 10px;
+}
+
+.right a:hover{
+    background-color: rgb(9, 73, 170);
+    border-radius: 8px;
+    animation: 2.5s showButtonBackground;
+}
+
+
+@keyframes showButtonBackground{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-text-container{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        /* padding-top: -250px; */
+    }
+}
+
+footer{
+    width: 100%;
+}
+
+#footer{
+    width: 100%;
+    /* height: 100vh; */
+    align-items: center;
+    justify-content: center; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container{
+    padding: 10% 10%;
+    /* width: 80%; */
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-message{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.footer-message strong{
+    font-size: 35px;
+}
+
+.footer-message div a{
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 2px;
+    padding: 10px 10px;
+    color:black;
+}
+
+.footer-message div a:hover{
+    background: rgb(9, 73, 170);
+    border-radius: 8px;
+    color: white;
+    animation: 2.5s showButtonBackground;
+}
+
+.footer-contacts{
+    padding-top: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-address{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.footer-address div{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-address div span a{
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+}
+
+.footer-links{
+    padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color:black;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-contacts{
+        flex-direction: column;
+        padding-top: 5%;
+    }
+    .footer-container{
+        padding: 10% 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-contacts{
+        flex-direction: column;
+        padding-top: 3%;
+    }
+    .footer-container{
+        padding: 7% 5%;
+    }
+}
+
+footer{
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    height: 100vh;
+}
+
+.sectionClass{
+    margin-bottom: 100vh;   
+    z-index: 10; 
+}
+
+
+/* Scroll horizontally part. */
+section{
+    overflow-x: hidden;
+    background: black;
+}
+
+.scroll-content-section{
+    height: 200px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-content-container{
+    margin-bottom: 10%;
+    margin-top: 10%;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.scroll-content-item{
+    margin: 0px 2%;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    transform: translateY(-50%);
+}
+
+.scroll-content-item:last-of-type{
+    margin-right: 100px;
+}
+
+.scrollContent{
+    font-size: 55px;
+}
+
